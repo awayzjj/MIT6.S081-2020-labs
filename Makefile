@@ -1,16 +1,4 @@
-
-# To compile and run with a lab solution, set the lab name in lab.mk
-# (e.g., LB=util).  Run make grade to test solution with the lab's
-# grade script (e.g., grade-lab-util).
-
--include conf/lab.mk
-
-K=kernel
-U=user
-
-OBJS = \
-  $K/entry.o \
-  $K/start.o \
+# To compile and run with a lab solution, set the lab name in lab.mk # (e.g., LB=util).  Run make grade to test solution with the lab's # grade script (e.g., grade-lab-util).  -include conf/lab.mk K=kernel U=user OBJS = \ $K/entry.o \ $K/start.o \
   $K/console.o \
   $K/printf.o \
   $K/uart.o \
@@ -149,6 +137,7 @@ UPROGS=\
 	$U/_grind\
 	$U/_wc\
 	$U/_zombie\
+	$U/_trace\
 
 
 ifeq ($(LAB),syscall)
